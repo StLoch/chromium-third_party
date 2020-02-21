@@ -49,9 +49,8 @@ using std::make_optional;
 using std::nullopt_t;
 using std::nullopt;
 }  // namespace absl
-
 #else  // ABSL_HAVE_STD_OPTIONAL
-
+#error brwils: We should definitely have std::optional. If you get here you will almost certainly run into problems linking in the future.
 #include <cassert>
 #include <functional>
 #include <initializer_list>
